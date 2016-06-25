@@ -1,7 +1,7 @@
 MAX_COUNT = 128
 
 module Unique
-    def self.all_unique_1?(str)
+    def self.is_unique_1?(str)
         return true if str.nil? ||str.size <= 1
         return false if str.size > MAX_COUNT
         hash = {}
@@ -13,7 +13,7 @@ module Unique
         return true
     end
     
-    def self.all_unique_2?(str)
+    def self.is_unique_2?(str)
         return true if str.nil? ||str.size <= 1
         str.size.times do |i|
             break if i+1 > str.size
@@ -21,8 +21,4 @@ module Unique
         end
         return true
     end
-end
-
-[nil, '', 'x', 'xx', 'xxx', 'abcdef', 'abcdeff'].each do |str|
-    puts "#{str.inspect}: 1=#{Unique.all_unique_1?(str)}, 2=#{Unique.all_unique_2?(str)}"
 end
