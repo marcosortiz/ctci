@@ -1,2 +1,2 @@
 # ctci-ruby
-Cracking the Coding Interview 6th Ed. Solutions
+Ruby Solution for the book Cracking the Coding Interview 6th Ed.
