@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'c1/1_is_unique'
 
-describe Unique do
+describe '1.1' do
     
     let :input do
         {

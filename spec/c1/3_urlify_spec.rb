@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'c1/3_urlify'
 
-describe Urlify do
+describe '1.3' do
     
     let :no_spaces_strings do
         {
