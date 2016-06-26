@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'c1/2_check_permutation'
 
-describe CheckPermutation do
+describe '1.2' do
     
     let :false_inputs do
         [
@@ -22,7 +22,7 @@ describe CheckPermutation do
     
     
 
-    it 'it must properly check for string uniqueness' do
+    it 'it must properly check for string permutations' do
         false_inputs.each do |arr|
             expect(
                 CheckPermutation.is_permutation_1?(arr[0], arr[1])
